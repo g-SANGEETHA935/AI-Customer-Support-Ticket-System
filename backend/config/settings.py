@@ -23,9 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fps+7oqo@owiz3ucr#zzz*z=09^y+(0qc(axeb5^%&f8q(--uv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "ai-ticket-system-backend.onrender.com",
+]
 
 
 # Application definition
