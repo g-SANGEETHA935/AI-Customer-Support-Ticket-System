@@ -1,5 +1,6 @@
+from django.urls import path
 from rest_framework.routers import DefaultRouter
-from .views import TicketViewSet
+from .views import TicketViewSet, register
 
 router = DefaultRouter()
 router.register(
@@ -8,4 +9,8 @@ router.register(
     basename="ticket"
 )
 
-urlpatterns = router.urls
+urlpatterns = [
+    path("register/", register),
+]
+
+urlpatterns += router.urls
